@@ -1,0 +1,204 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    background-image: url(https://www.zingerbug.com/Backgrounds/background_images/indigo_textured_rock_seamless_pattern.jpg);
+    margin: 0;
+    padding: 0;
+
+}
+
+
+header {
+    border: solid 1px #cccccc;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #ffffff;
+    margin:0;
+    margin-bottom: 20px;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    overflow: auto;
+
+}
+
+a:link { color: black; }
+a:visited { color: gray; }
+a:hover { color: pink; }
+a:active { color: yellow; }
+
+.container{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto; 
+    clear: both;
+}
+.yourname{
+    background-color: #4aaaa5;
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    float: left;
+    flex-direction: column;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 80px;
+    text-align: center;
+    width: 220px;
+    height: 90px;
+
+}
+.yourname:hover{background-color: rgb(236, 141, 72);
+    color: blue;
+}
+hr{
+    margin: 2px;
+    border: 1px solid rgb(211, 194, 194);
+}
+.full{
+    margin-top: 25px;
+    text-decoration: none;
+    float: right;
+    
+}
+.full a{
+display: inline-block;
+color: #777777;
+text-decoration: none;
+padding-left: 15px;
+font-size: 24px;
+}
+.full a:first-child{
+    border-left: 0 none;
+}
+.full a:hover{color: pink}
+img{
+    padding: 0px;
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+    float: left;
+    margin-right: 10px;
+}
+#maincontainer{
+    padding-top: 120px;
+}
+#maincontent{
+    background-color: #ffffff;
+    border: solid 1px #dddddd;
+    color: #777777;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    max-width: 960px;
+    height: auto;
+    margin: 0 auto 0 auto;
+    margin-top: 20px;
+    clear: both;
+    padding: 20px;
+}
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1:hover{color: brown;}
+p{
+    font-size: 18px;
+    font-weight: 5px;
+    padding-left: 2px;
+    line-height: 28px;
+    padding-right: 10px;
+}
+
+p:hover{ background-color: burlywood;}
+input{
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+    line-height: 20px;
+}
+
+.message{
+    height: 200px
+    
+}
+.pictures{
+    padding-top: 20px;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    overflow: auto;
+
+}
+
+footer{
+    background-color: #666666;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    text-align: center;
+    border-top: 8px solid #4aaaa5;
+    color: #ffffff;
+}
+@media screen and (max-width: 980px){
+    body{
+        width: 980px;
+        width: 100%;
+    }
+    #maincontent{
+        width: 640px;
+        margin-right: 230px;
+    }
+    .yourname{
+        margin-left: 90px;
+    }
+    .full{
+        padding-left: 30px;
+        font-size: 16px;
+    }
+}
+
+ 
+    @media screen and (max-width: 768px){
+        body{
+            width: 768px;
+            width: 100%;
+        }
+        #maincontent{
+            width: 640px;
+            margin-left: 20px;
+        }
+        .full{
+            padding-right: 90px;
+        }
+        .yourname{
+            margin-left: 20px;
+        }
+    }
+    
+    
+
+@media screen and (max-width: 640px){
+    body{
+        width: 640px;
+        width: 100%;
+    }
+    .yourname{
+        width: 100%;
+    }
+    .container{
+        width: 640px;
+    }
+    .full {
+        padding-right: 160px;
+
+    }
+    #maincontent{
+        width: 640px;
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+    .pictures{
+        max-width: 500px;;
+}
+}
